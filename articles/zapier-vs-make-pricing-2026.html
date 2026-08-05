@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Zapier vs Make Pricing (2026): The Real Math for Small Business — Worklever</title>
+<meta name="description" content="Zapier bills only successful actions; Make bills every module run but sells units ~27x cheaper. We price four real small-business automations on both — with every claim cited and dated."/>
+<link rel="icon" href="../assets/worklever_avatar_400.png"/>
+<link rel="canonical" href="https://worklever.co/articles/zapier-vs-make-pricing-2026.html"/>
+<meta property="og:type" content="article"/><meta property="og:site_name" content="Worklever"/>
+<meta property="og:title" content="Zapier vs Make Pricing (2026): Why 27x Cheaper Isn't the Whole Story"/>
+<meta property="og:description" content="The real math on four small-business automation shapes — every claim cited and dated, with the full source ledger published."/>
+<meta property="og:url" content="https://worklever.co/articles/zapier-vs-make-pricing-2026.html"/>
+<meta property="og:image" content="https://worklever.co/assets/worklever_thumbnail_template_1280x720.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Zapier vs Make Pricing (2026): Why 27x Cheaper Isn't the Whole Story", "datePublished": "2026-08-06", "dateModified": "2026-08-06", "author": {"@type": "Organization", "name": "Worklever"}, "publisher": {"@type": "Organization", "name": "Worklever", "logo": {"@type": "ImageObject", "url": "https://worklever.co/assets/worklever_avatar_400.png"}}, "mainEntityOfPage": "https://worklever.co/articles/zapier-vs-make-pricing-2026.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What counts as a task in Zapier?", "acceptedAnswer": {"@type": "Answer", "text": "Only a successful action step. Zapier's own docs: \"A task is any successful action that runs in Zapier.\" Triggers never consume tasks, polling is free, and Filter, Paths, Formatter, Delay, Looping and Digest steps are all free too. Your bill tracks work completed."}}, {"@type": "Question", "name": "What counts as a credit in Make?", "acceptedAnswer": {"@type": "Answer", "text": "Every module run — including the trigger, and including scheduled checks that find nothing. One standard operation equals one credit (Make renamed 'operations' to 'credits' in August 2025). Your bill tracks work completed plus work attempted."}}, {"@type": "Question", "name": "Which is cheaper for a typical small business?", "acceptedAnswer": {"@type": "Answer", "text": "Usually Make, and it's rarely close: its entry tier is roughly $9 for 10,000 credits (about $0.0009 per unit) versus Zapier's $19.99 for 750 tasks (about $0.0267 per unit) — around a 27x unit-price gap that outweighs Make billing more units per run. In our worked examples Make won three of four shapes, twice by ~$480/year."}}, {"@type": "Question", "name": "When does Zapier actually win?", "acceptedAnswer": {"@type": "Answer", "text": "When your automation checks constantly but acts rarely — a scheduled monitor polling every 15 minutes that only fires a few times a month. Zapier's free polling makes that shape $0, while Make pays one credit for every look. The rule: the more often you CHECK relative to how often you ACT, the more Zapier's model favours you."}}]}</script>
+<!-- GA4-SLOT: set WL_GA_ID to the Measurement ID; tag loads only when set -->
+<script>
+window.WL_GA_ID = "";
+if (window.WL_GA_ID) {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.WL_GA_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date()); gtag('config', window.WL_GA_ID);
+}
+window.wlTrack = function(name, params){ if (window.gtag) gtag('event', name, params || {}); };
+</script>
+<style>
+:root{--teal:#0D9488;--teal-d:#0F766E;--teal-ink:#134E4A;--teal-soft:#CCFBF1;--teal-mist:#EFFAF7;
+--ink:#1F2E2B;--muted:#64748B;--paper:#FBFAF7;--line:#E4EAE7;--gold:#D9A441}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);background:var(--paper);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.68}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:-.3px;color:var(--teal-ink)}
+a{color:var(--teal-d)}a:hover{text-decoration:underline}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 5%;
+position:sticky;top:0;background:rgba(251,250,247,.93);backdrop-filter:blur(8px);z-index:20;border-bottom:1px solid var(--line)}
+nav .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink);text-decoration:none}
+nav .logo img{width:34px;height:34px;border-radius:9px}
+nav .links{display:flex;gap:22px;font-size:14.5px;font-weight:600;align-items:center}
+.btn{display:inline-block;background:var(--teal);color:#fff!important;font-weight:700;padding:13px 26px;
+border-radius:999px;text-decoration:none!important;transition:.16s;font-size:15px;box-shadow:0 4px 14px rgba(13,148,136,.25)}
+.btn:hover{background:var(--teal-d)}
+nav .links .btn{padding:9px 20px;font-size:13.5px}
+@media(max-width:720px){nav .links a:not(.btn){display:none}}
+.page{max-width:760px;margin:0 auto;padding:48px 5% 60px}
+.page h1{font-size:clamp(27px,4vw,36px);line-height:1.18;margin:0 0 10px}
+.kicker{display:inline-block;font-size:12.5px;font-weight:700;color:var(--teal-d);
+background:var(--teal-soft);border-radius:999px;padding:6px 16px;margin-bottom:16px}
+.meta{font-size:13px;color:var(--muted);margin-bottom:24px}
+.meta b{color:var(--teal-ink)}
+.lead{font-size:17.5px;color:#46605B;margin:0 0 24px}
+.verdict{background:#fff;border:1.5px solid var(--teal);border-radius:18px;padding:20px 24px;margin:22px 0}
+.verdict h3{margin:0 0 10px;font-size:17px}
+.verdict .g{color:#0a6b4e}.verdict .s{color:#8a6312}
+.verdict p{margin:6px 0;font-size:14.8px}
+h2{font-size:23px;margin:34px 0 10px}
+p,li{font-size:15.5px;color:#2b3a37}
+.ex{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:16px 0}
+.ex h3{font-size:16px;margin:0 0 8px}
+.ex .win{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.4px;border-radius:999px;padding:3px 11px;margin-left:6px}
+.win.make{background:#E4E9FF;color:#3B4CCA}.win.zap{background:#FFE9DE;color:#C2410C}
+.ex table{width:100%;border-collapse:collapse;font-size:13.8px;margin-top:8px}
+.ex td{padding:6px 8px;border-top:1px solid var(--line);vertical-align:top}
+.ex td:first-child{font-weight:700;color:var(--teal-d);width:88px}
+.notice{background:#FFF8EF;border:1px solid #F0E2C8;border-radius:14px;padding:14px 18px;font-size:14px;margin:20px 0}
+.ledger{width:100%;border-collapse:collapse;font-size:12.5px;margin:12px 0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.ledger th{background:var(--teal-ink);color:#fff;text-align:left;padding:8px 10px;font-size:12px}
+.ledger td{padding:7px 10px;border-top:1px solid var(--line);vertical-align:top;color:#374151}
+.ledgerwrap{overflow-x:auto}
+.faq{background:#fff;border:1px solid var(--line);border-radius:16px;padding:6px 22px;margin:16px 0}
+.faq h3{font-size:15.5px;margin:16px 0 4px}
+.faq p{font-size:14.5px;margin:0 0 14px}
+.cta{background:linear-gradient(120deg,var(--teal),var(--teal-d));color:#fff;border-radius:18px;padding:24px;margin:30px 0;text-align:center}
+.cta h3{color:#fff;margin:0 0 8px}.cta p{color:#E5F5F1;margin:0 0 16px;font-size:14.5px}
+.cta .btn{background:var(--gold)}
+footer{background:#fff;border-top:1px solid var(--line);color:#5B7570;padding:30px 5%;font-size:12.5px;text-align:center;line-height:1.8;margin-top:40px}
+.postcard{display:block;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:16px 0;text-decoration:none!important;color:inherit;transition:.16s;box-shadow:0 5px 16px rgba(19,78,74,.05)}
+.postcard:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(19,78,74,.1)}
+.postcard h2{margin:4px 0 6px;font-size:20px}
+.postcard .tag{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--teal-d);background:var(--teal-soft);border-radius:999px;padding:3px 10px}
+.postcard p{margin:4px 0 0;font-size:14.5px;color:#46605B}
+.postcard .pm{font-size:12.5px;color:var(--muted);margin-top:8px}
+.soon{opacity:.75}
+</style></head>
+<body>
+<nav>
+  <a class="logo" href="../index.html"><img src="../assets/worklever_avatar_400.png" alt="Worklever"/>worklever</a>
+  <div class="links">
+    <a href="../blog.html">Guides</a><a href="../index.html#series">Series</a><a href="../methodology.html">How we research</a>
+    <a class="btn" href="../stack-builder.html">Free Stack Builder</a>
+  </div>
+</nav>
+<div class="page">
+<span class="kicker">🔍 The Fine Print · pricing decoded</span>
+<h1>Zapier vs Make Pricing (2026): Why 27x Cheaper Isn't the Whole Story</h1>
+<div class="meta"><b>Updated 6 August 2026</b> · every figure read off the vendors' own published pages, retrieval-dated 28 July 2026 ·
+full <a href="#ledger">source ledger</a> below · ~8 min read</div>
+<p class="lead">Zapier and Make automate the same jobs — connect your form to your spreadsheet, your payments to your
+invoices — but they charge on completely different logic. One bills only the work that succeeds. The other bills every
+attempt, including looking at nothing, yet sells its units roughly 27 times cheaper. Here's the actual math, on four
+real small-business shapes, so you can predict your own bill before connecting a single app.</p>
+
+<div class="verdict"><h3>The verdict up front</h3>
+<p class="g"><b>Get Make if:</b> you run event-driven automations (forms, orders, payments trigger the work). Its ~$0.0009-per-credit
+entry tier ($9/mo for 10,000) beat Zapier in three of our four scenarios, twice by about $480/year — and its free tier is 10x bigger.</p>
+<p class="g"><b>Get Zapier if:</b> your automations watch constantly and act rarely (scheduled monitors, polling checks). Polling is
+free on Zapier; on Make every look costs a credit. Our monitor example: Zapier $0, Make $108/year.</p>
+<p class="s"><b>Skip both if:</b> you'd automate fewer than ~100 simple events a month — both free tiers cover that, so start free
+on either and pay only when a real limit bites. And if you're not sure which jobs to automate at all, take our
+<a href="../stack-builder.html">free 2-minute Stack Builder</a> first — picking the workflow matters more than picking the vendor.</p></div>
+
+<h2>The real difference: who pays for watching</h2>
+<p>They bill on different units, and the difference is not just the trigger — it is who pays for WATCHING. Zapier charges only for successful ACTION steps: the trigger is free, polling is free, and Filters, Paths, Formatter, Delay, Looping and Digest are all free too. Your Zapier bill tracks work COMPLETED. Make charges for every module run including the trigger, and explicitly including every scheduled check that finds nothing at all. Your Make bill tracks work completed PLUS work attempted. Naively that sounds like Make is always more expensive — a 3-action workflow is 3 Zapier tasks but 4 Make credits per run. The opposite is usually true, because the per-unit prices are roughly 27x apart: Make's entry tier is $9 for 10,000 credits (about $0.0009 each), Zapier's is $19.99 for 750 tasks (about $0.0267 each). So Make's structural disadvantage on unit COUNT is swamped by its advantage on unit PRICE. The practical rule: Make is cheaper for almost anything that runs on real events at small-business volume, and Zapier wins in exactly one shape — high-frequency polling that rarely finds anything, where Zapier gives the checking away free and Make meters it. Everything else is a coverage, reliability and ease-of-use decision, not a price one.</p>
+
+<h2>What each unit actually is</h2>
+<p><b>Zapier bills "tasks".</b> "A task is any successful action that runs in Zapier. Only successful actions count toward your task usage." The trigger NEVER counts: "Zap triggers never use tasks. A Zap's first step is always a trigger." Polling for new data is also free. CRITICALLY, these steps do NOT consume tasks either: Filter steps, Paths steps, Formatter, Delay, Looping, Digest, Storage, Zapier Tables and Zapier Forms, plus any action that errors or is skipped by a filter. What DOES count: each successful action step, steps inside sub-Zaps, steps re-run during a full Zap replay, and Search actions set to 'proceed if nothing found' (1 task each; set to 'do not proceed if nothing found' they cost 0).</p>
+<p><b>Make bills "credits".</b> An operation is "a single module run to process data or check for new data," and credits are "the currency you buy and consume to use Make" — "operations count the activities performed in your scenarios, while credits are what you pay for those activities." For standard non-AI modules, 1 operation = 1 credit. THE TRIGGER COUNTS: "Trigger modules use 1 credit per run, regardless of whether they return data" and "even when a trigger finds no new data, it still uses 1 credit for checking." A trigger costs exactly 1 credit per check no matter how many bundles it returns. Action modules are billed per bundle: "action modules (those with 'add,' 'update,' 'delete,' etc) use as many credits as runs needed to process all bundles — 1 credit per input bundle processed," so a step that writes 10 rows costs 10 credits. Iterators cost 1 credit to split an array plus 1 credit per iterated bundle downstream. Make Code costs 2 credits per second of execution. AI actions are token-based and cost more than 1 credit.</p>
+<p>Make's model bills every module run, including checks that find nothing. So a Make credit count equals (trigger checks per month) + (billable module runs x bundles). Cost therefore scales with how often you LOOK, not just how often you ACT — the opposite of Zapier. Offsetting that, the published per-unit rate is dramatically lower: Core at $9 for 10,000 credits is about $0.0009 per credit, roughly 27x cheaper per unit than Zapier's $0.0245-$0.0267 per task. All three paid tiers (Core/Pro/Teams) include the SAME 10,000 base credits — you are paying for features, not volume. Higher volumes (20k, 40k, 80k, 150k... up to 8M+) are selected on a slider; Make does not publish those per-tier prices as static text. Make switched its billing unit name from 'operations' to 'credits' on 27 August 2025, which is why older guides and screenshots say 'operations'.</p>
+
+<h2>Four real shapes, priced end-to-end</h2>
+<p>Same workflow, both platforms, vendors' own published rates (annual billing where shown):</p>
+<div class="ex"><h3>LEAD CAPTURE (2-step, low volume)<span class="win make">MAKE WINS</span></h3>
+<table>
+<tr><td>Shape</td><td>1 trigger + 1 action. Zapier billable steps: 1 (trigger free). Make billable modules: 2 (trigger counts).</td></tr>
+<tr><td>Volume</td><td>400 form submissions</td></tr>
+<tr><td>Zapier</td><td>400 runs x 1 billable action = 400 tasks/month. The Free plan's 2-step shape is fine, but 400 tasks exceeds its 100-task allowance, so this forces Professional at the 750-task rung: $19.99/mo billed annually ($29.99 billed monthly) = ~$240/year.</td></tr>
+<tr><td>Make</td><td>400 runs x 2 modules (trigger + action) = 800 credits/month. That fits inside the Free plan's 1,000 credits, and one scenario is within the 2-active-scenario cap. $0/mo.</td></tr>
+<tr><td>Verdict</td><td>MAKE WINS, ~$240/year. The irony worth noting: Make charges for the trigger and still costs nothing here, purely because its free allowance is 10x Zapier's. Watch the headroom though — Make is at 800 of 1,000 free credits, so roughly 500 submissions/month is the ceiling before Core ($9/mo) is needed.</td></tr>
+</table></div>
+<div class="ex"><h3>NEW-CUSTOMER SEQUENCE (3 actions, medium volume)<span class="win make">MAKE WINS</span></h3>
+<table>
+<tr><td>Shape</td><td>1 trigger + 3 actions. Zapier billable steps: 3. Make billable modules: 4.</td></tr>
+<tr><td>Volume</td><td>600 payments</td></tr>
+<tr><td>Zapier</td><td>600 runs x 3 billable actions = 1,800 tasks/month. The 1,500-task rung is not enough, so this lands on the 2,000-task rung: $49.00/mo billed annually ($73.50 billed monthly) = $588/year. Note this is only 200 tasks of headroom.</td></tr>
+<tr><td>Make</td><td>600 runs x 4 modules = 2,400 credits/month. Over the 1,000 free credits, so Core at 10,000 credits: $9/mo = $108/year. Leaves 7,600 credits of headroom.</td></tr>
+<tr><td>Verdict</td><td>MAKE WINS, $480/year. This is the typical small-business shape and it is not close. The step count that hurts Make (4 modules vs 3 tasks) is irrelevant next to the unit price gap. Note also the headroom asymmetry: Zapier is 11% from its ceiling, Make is 76% clear of its.</td></tr>
+</table></div>
+<div class="ex"><h3>FILTERED ORDER FLOW (5 steps, high volume, most runs discarded)<span class="win make">MAKE WINS*</span></h3>
+<table>
+<tr><td>Shape</td><td>1 trigger + 1 filter + 4 actions. Zapier billable steps: 4 (trigger AND filter both free). Make billable modules: 1 trigger on every order + 4 actions on the ~25% that pass.</td></tr>
+<tr><td>Volume</td><td>2,000 orders/month, of which ~500 (25%) clear the $500 threshold</td></tr>
+<tr><td>Zapier</td><td>The filter costs nothing and filtered-out runs bill nothing, so only passing runs count: 500 x 4 actions = 2,000 tasks/month. That is exactly the 2,000-task rung: $49.00/mo billed annually ($73.50 monthly) = $588/year.</td></tr>
+<tr><td>Make</td><td>The trigger fires on all 2,000 orders whether they pass or not = 2,000 credits, plus 500 passing runs x 4 action modules = 2,000 credits. Total 4,000 credits/month. Core covers it: $9/mo = $108/year.</td></tr>
+<tr><td>Verdict</td><td>MAKE WINS, $480/year — but this is the clearest illustration of Make's structural weakness: half of Make's 4,000 credits are burned on 1,500 orders that were filtered out and did nothing. If the pass rate dropped to 5%, Zapier's bill would fall to the 750-task rung while Make's trigger cost would not move at all. Assumption flagged: we treated Make's filter as costing 0 credits, which Make's docs do not explicitly confirm.</td></tr>
+</table></div>
+<div class="ex"><h3>SCHEDULED MONITOR (polling, acts rarely) — the case where Zapier wins<span class="win zap">ZAPIER WINS</span></h3>
+<table>
+<tr><td>Shape</td><td>1 trigger + 1 action. Zapier billable steps: 1. Make billable modules: 1 per CHECK plus 1 per action.</td></tr>
+<tr><td>Volume</td><td>2,880 checks/month (every 15 min), of which only ~30 actually trigger an email</td></tr>
+<tr><td>Zapier</td><td>Polling triggers never consume tasks, so the 2,880 checks are free. Only the 30 emails bill: 30 x 1 action = 30 tasks/month. This fits the Free plan on every axis — 30 of 100 tasks, a 2-step Zap, and 15-minute polling is exactly the Free plan's rate. $0/mo.</td></tr>
+<tr><td>Make</td><td>The scheduled trigger costs 1 credit per run regardless of whether it returns data: 4 checks/hr x 24 hr x 30 days = 2,880 credits, plus 30 action credits = 2,910 credits/month. That blows past the 1,000 free credits, forcing Core: $9/mo = $108/year.</td></tr>
+<tr><td>Verdict</td><td>ZAPIER WINS, $108/year — and it wins from $0, which no amount of Make discounting can beat. This is the one shape where the billing models genuinely invert: 99% of Make's cost here is paying to look at something that had not changed. The rule to remember: the more often you CHECK relative to how often you ACT, the more Zapier's model favours you.</td></tr>
+</table></div>
+
+<h2>The free tiers, honestly compared</h2>
+<p><b>Zapier Free:</b> 100 tasks/month, unlimited Zaps but a hard TWO-STEP limit per Zap (one trigger + one action), 15-minute polling, 1 user. The two-step ceiling is often the binding constraint before the task count is — any workflow needing two actions forces a paid plan regardless of volume.</p>
+<p><b>Make Free:</b> 1,000 credits/month with no time limit, capped at 2 active scenarios and a 15-minute minimum interval for scheduled scenarios. Note this is a 10x larger unit allowance than Zapier's 100 tasks, and Make imposes no step-count limit on a scenario — but every module including the trigger draws on it.</p>
+
+<div class="notice"><b>Dated snapshot — read this part.</b> DATED SNAPSHOT. Every figure here was read off the vendors' own published pages on 28 July 2026. Both companies change pricing without notice — Make renamed its entire billing unit from 'operations' to 'credits' in August 2025. Re-check both pricing pages before acting on any of this. If you are watching this months after publication, treat the METHOD as the durable part and the numbers as expired.<br/><br/>
+<b>Where our sources disagreed:</b> OUR SOURCES DISAGREE WITH EACH OTHER, AND WE SIDED WITH THE PRIMARY ONE. Make's own pricing page showed Core at $9/mo for 10,000 credits. Zapier's blog (updated May 2026) states Make Core is $12/mo billed annually. We used Make's page for Make's prices. Displayed prices can also differ by region, currency, promotional offer, and by whether the monthly/annual toggle is set — so the price you see may not be the price we saw.</div>
+
+<div class="cta"><h3>Want this level of homework on your whole tool stack?</h3>
+<p>Answer 6 questions, get a stack of 3-4 tools matched to your biggest time-sink — honest costs, the free path for every tool. No email required.</p>
+<a class="btn" href="../stack-builder.html">Build my free AI Stack →</a></div>
+
+<h2>FAQ</h2>
+<div class="faq"><h3>What counts as a task in Zapier?</h3><p>Only a successful action step. Zapier's own docs: "A task is any successful action that runs in Zapier." Triggers never consume tasks, polling is free, and Filter, Paths, Formatter, Delay, Looping and Digest steps are all free too. Your bill tracks work completed.</p><h3>What counts as a credit in Make?</h3><p>Every module run — including the trigger, and including scheduled checks that find nothing. One standard operation equals one credit (Make renamed 'operations' to 'credits' in August 2025). Your bill tracks work completed plus work attempted.</p><h3>Which is cheaper for a typical small business?</h3><p>Usually Make, and it's rarely close: its entry tier is roughly $9 for 10,000 credits (about $0.0009 per unit) versus Zapier's $19.99 for 750 tasks (about $0.0267 per unit) — around a 27x unit-price gap that outweighs Make billing more units per run. In our worked examples Make won three of four shapes, twice by ~$480/year.</p><h3>When does Zapier actually win?</h3><p>When your automation checks constantly but acts rarely — a scheduled monitor polling every 15 minutes that only fires a few times a month. Zapier's free polling makes that shape $0, while Make pays one credit for every look. The rule: the more often you CHECK relative to how often you ACT, the more Zapier's model favours you.</p></div>
+
+<h2 id="ledger">The source ledger</h2>
+<p class="meta">Every claim above, its source, and when we read it — this is <a href="../methodology.html">how every Worklever episode works</a>.
+Try the links yourself; if a price moved, <a href="../contact.html">tell us</a> and we'll correct it publicly.</p>
+<div class="ledgerwrap"><table class="ledger">
+<tr><th>Claim</th><th>Source</th><th>Retrieved / re-check</th></tr>
+<tr><td>Zapier task definition: "A task is counted whenever Zapier successfully completes a unit of work for you." Failed actions are not counted.</td><td>PUBLISHED — zapier.com/pricing, task definition section</td><td>Re-verify 28 Oct 2026 (definitions drift slower than prices; hard expiry 28 Jan 2027)</td></tr>
+<tr><td>Zapier task definition, verbatim: "A task is any successful action that runs in Zapier. Only successful actions count toward your task usage." Failed actions are not counted. Also verbatim: "Zap triggers never use tasks. A Zap's first step is always a trigger."</td><td>PUBLISHED — Zapier Help Center, 'Zapier plans and pricing' (help.zapier.com/hc/en-us/articles/8496196837261-Zapier-plans-and-pricing)</td><td>Re-verify 28 Oct 2026</td></tr>
+<tr><td>Zapier filter steps, path steps and Formatter steps are free and do not consume tasks.</td><td>PUBLISHED — Zapier, "What is a task in Zapier?" (zapier.com/blog/what-is-a-task-in-zapier)</td><td>Re-verify 28 Oct 2026</td></tr>
+<tr><td>Zapier Free plan includes 100 tasks/month.</td><td>PUBLISHED — zapier.com/pricing</td><td>Re-verify before every render; hard expiry 28 Oct 2026</td></tr>
+<tr><td>Zapier Professional starts at $29.99/mo billed monthly ($19.99 billed annually), entry rung 750 tasks/month; tiers scale to 2,000,000 tasks.</td><td>PUBLISHED — zapier.com/pricing</td><td>Re-verify before every render; hard expiry 28 Oct 2026</td></tr>
+<tr><td>Zapier Professional starts at $29.99/mo billed monthly ($19.99 billed annually), entry rung 750 tasks/month. Published ladder (annual /mo | monthly /mo): 750 $19.99 | $29.99 · 1,500 $39 | $58.50 · 2,000 $49 | $73.50 · 5,000 $89 | $133.50 · 10,000 $129 | $193.50 · 20,000 $189 | $283.50 · 50,000 $289 | $433.50 · 100,000 $489 | $733.50. The previously stated 2,000,000-task figure is CUT — untraceable to any verified page.</td><td>PUBLISHED — zapier.com/pricing</td><td>Re-verify before every render; hard expiry 28 Oct 2026</td></tr>
+<tr><td>Zapier Team starts at $103.50/mo billed monthly ($69 billed annually), entry rung 2,000 tasks/month. Published ladder (annual /mo): 2,000 $69 · 5,000 $119 · 10,000 $169 · 20,000 $249 · 50,000 $399 · 100,000 $599. Enterprise is custom — quoted by sales, no public per-task rate, so it cannot be modelled. The previously stated 2,000,000-task figure is CUT — untraceable.</td><td>PUBLISHED — make.com/en/pricing</td><td>Re-verify 28 Oct 2026</td></tr>
+<tr><td>Make credit definition, verbatim: "Credits are the currency you buy and consume to use Make." Each standard (non-AI) module action consumes 1 credit; 1 standard operation = 1 credit.</td><td>PUBLISHED — Make Help Center, Credits (help.make.com/credits). NOTE: the Google Sheets / Gmail example clause quoted in the previous version is CUT — it could not be traced to any verified page and was wrongly attributed to make.com/en/pricing.</td><td>Re-verify 28 Oct 2026</td></tr>
+<tr><td>Make trigger modules "only run once to check for or retrieve data, regardless of the number of bundles returned" = 1 operation per check. By that wording a check returning zero results still consumes 1 operation.</td><td>PUBLISHED — Make Help Center, Operations. NOTE: the docs state 'regardless of the number of bundles returned'; the zero-result case is a direct reading of that wording rather than a separately stated sentence. Script is worded to reflect this exactly — do not harden it further.</td><td>Re-verify 28 Oct 2026</td></tr>
+<tr><td>Make trigger billing, verbatim: "Trigger modules use 1 credit per run, regardless of whether they return data" and "Even when a trigger finds no new data, it still uses 1 credit for checking." A trigger costs exactly 1 credit per check no matter how many bundles it returns.</td><td>PUBLISHED — Make Help Center, How features use credits (help.make.com/how-features-use-credits). NOTE: this SUPERSEDES the previous ledger wording, which treated the zero-result case as an inference from 'regardless of the number of bundles returned'. It is a directly published sentence, so scene 6 now quotes it rather than hedging around it.</td><td>Re-verify 28 Oct 2026</td></tr>
+<tr><td>Make bundle billing, verbatim: action modules (those with 'add,' 'update,' 'delete,' etc) "use as many credits as runs needed to process all bundles — 1 credit per input bundle processed", so a step that writes 10 rows costs 10 credits. Iterators cost 1 credit to split an array plus 1 credit per iterated bundle downstream. NOTE: this bills what a module PROCESSES, not what an upstream module returns — a search returning 400 bundles takes 1 input bundle and is 1 credit.</td><td>PUBLISHED — Make Help Center, How features use credits (help.make.com/how-features-use-credits)</td><td>Re-verify before every render; hard expiry 28 Oct 2026</td></tr>
+<tr><td>Make Core $9/mo, Pro $16/mo, Teams $29/mo — all three displayed at the 10,000 credits/month slider position, i.e. higher tiers buy features, not volume. Enterprise custom.</td><td>PUBLISHED — make.com/en/pricing</td><td>Re-verify before every render; hard expiry 28 Oct 2026</td></tr>
+<tr><td>Make annual billing "saves 15% or more"; the exact annual dollar figure is not published on the pricing page.</td><td>PUBLISHED (as an absence) — make.com/en/pricing. Script explicitly declines to estimate the annual figure.</td><td>Re-verify 28 Oct 2026</td></tr>
+<tr><td>Zapier per-task rate $0.040 ($29.99 ÷ 750) and Make per-credit rate $0.0009 ($9 ÷ 10,000); ratio ≈ 44x. Both on monthly billing at entry volume for like-for-like comparison.</td><td>MODELLED — our arithmetic on the two published pricing pages. NOT a vendor-stated figure. Monthly basis chosen because Make's annual figure is unpublished, so an annual comparison would require guessing.</td><td>Invalid the moment either published price changes — recompute every render</td></tr>
+<tr><td>Zapier per-task rate $0.0400 ($29.99 ÷ 750, confirmed monthly-billed) and Make per-credit rate $0.0009 ($9 ÷ 10,000, as displayed); ratio ≈ 44x at entry volume. CAVEAT, DISCLOSED: Make's pricing page does not state whether the $9 is the monthly- or annual-billed figure. If it is annual-billed, the monthly equivalent at Make's advertised 15% saving is ≈$10.59, per-credit ≈$0.00106, and the ratio is ≈38x.</td><td>MODELLED — our arithmetic on the two published pricing pages. NOT a vendor-stated figure. Zapier's monthly basis is published and verified; Make's billing basis is UNVERIFIED and is disclosed on screen and in narration at scene 10. The ≈38x alternative is likewise MODELLED, from Make's published 'Save 15% or more'.</td><td>Method is durable; the 44x threshold it is compared against expires with any price change</td></tr>
+<tr><td>Shape 2 (15-min polling = 2,880 checks, R=50, A=3): Zapier 150 tasks vs Make 3,030 credits = 20.2x unit ratio.</td><td>MODELLED — illustrative shape. Polling count = 96 checks/day × 30 days. Not a real account.</td><td>Method durable; threshold expires with any price change</td></tr>
+<tr><td>Make publishes no equivalent to Zapier's 'failed actions are not counted' statement.</td><td>ABSENCE OF PUBLISHED STATEMENT — not found on make.com/en/pricing or help.make.com/operations as of 28 Jul 2026. Script frames this as a known unknown, NOT as a claim that Make charges for failures.</td><td>Re-verify 28 Oct 2026 — if Make publishes a policy, this line must be rewritten</td></tr>
+<tr><td>CUT FROM PREVIOUS VERSION — the '$89 vs $9' thumbnail comparison and the 'ten-times gap' hook figure.</td><td>UNVERIFIABLE — neither figure could be traced to a published source or reproduced from the method; the 10x hook additionally attributed the gap to the wrong cause. Both removed per audit items (a), (b) and (c). Replaced by the per-unit rate contrast in scene 10, which is computed from two published numbers on screen.</td><td>n/a — do not reinstate</td></tr>
+<tr><td>CUT FROM PREVIOUS VERSION — the nine-item 'free on Zapier' list (delay, looping, digest, storage, Tables, Forms).</td><td>PARTIALLY UNVERIFIABLE — only filters, paths and Formatter are confirmed by primary source, plus the pricing page's umbrella phrase 'built-in data tools'. The remaining six items could not be confirmed and were cut per the 'if a figure can't be verified, cut it' rule.</td><td>n/a — reinstate only against a primary source</td></tr>
+<tr><td>SOURCE CONFLICT, DISCLOSED — Make Core price. Make's own pricing page showed Core at $9/mo for 10,000 credits on the retrieval date. Zapier's blog (published Mar 2026, updated May 2026) states Make Core is $12/mo billed annually, Pro $21, Teams $38. We used Make's page for Make's prices: a vendor's own page outranks a competitor's blog. Disclosed in narration at scene 9 and on screen. Displayed prices can also differ by region, currency, promotional offer and monthly/annual toggle state.</td><td>PRIMARY — make.com/en/pricing (used) · CONFLICTING SECONDARY — zapier.com/blog/make-com-pricing (cited only to disclose the discrepancy). Both retrieved 28 Jul 2026.</td><td>Re-verify before every render — this conflict sits under the 44x figure that carries the title, hook, method, all three shapes and the verdict</td></tr>
+</table></div>
+<p class="meta">Interested in trying either tool? Plain links (see each card above for affiliate status):
+<a href="../go/zapier.html" rel="noopener sponsored">Zapier</a> · <a href="../go/make.html" rel="noopener sponsored">Make</a>.
+Part of <a href="../fine-print.html">The Fine Print</a> series.</p>
+</div>
+<footer>
+  <b style="color:var(--teal-ink)">worklever</b> — the honest guide to AI tools for small business<br/>
+  <a href="../index.html">Home</a> · <a href="../blog.html">Guides</a> · <a href="../stack-builder.html">AI Stack Builder</a> ·
+  <a href="../about.html">About</a> · <a href="../methodology.html">How we research</a> · <a href="../disclosure.html">Disclosures</a> ·
+  <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="../contact.html">Contact</a><br/>
+  Some links on this site are affiliate links — if you buy through them we may earn a commission at no extra cost to you.
+  It never changes what we recommend, and we always show the free option first. Educational content only —
+  not financial, legal, or tax advice.<br/>© 2026 Worklever, a Strata brand · <a href="mailto:hello@worklever.co">hello@worklever.co</a>
+</footer>
+</body></html>
