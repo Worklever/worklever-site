@@ -3,6 +3,33 @@
 <title>Worklever — the honest guide to AI tools for small business</title>
 <meta name="description" content="Honest, no-jargon research on AI and software tools for non-technical small-business owners. Every claim cited and dated; every verdict names who should skip it."/>
 <link rel="icon" href="assets/worklever_avatar_400.png"/>
+<link rel="canonical" href="https://worklever.co/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Worklever"/>
+<meta property="og:title" content="Worklever — the honest guide to AI tools for small business"/>
+<meta property="og:description" content="We read the pricing pages and the fine print so a plumber, a bookkeeper or a shop owner doesn't have to. Every verdict names who should skip the tool."/>
+<meta property="og:url" content="https://worklever.co/"/>
+<meta property="og:image" content="https://worklever.co/assets/worklever_thumbnail_template_1280x720.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Worklever","url":"https://worklever.co/",
+"logo":"https://worklever.co/assets/worklever_avatar_400.png","email":"hello@worklever.co",
+"description":"The honest guide to AI tools for small business.","parentOrganization":{"@type":"Organization","name":"Strata"},
+"sameAs":[]}
+</script>
+<!-- GA4-SLOT: set WL_GA_ID to the Measurement ID; tag loads only when set -->
+<script>
+window.WL_GA_ID = "";  /* e.g. "G-XXXXXXXXXX" */
+if (window.WL_GA_ID) {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.WL_GA_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date()); gtag('config', window.WL_GA_ID);
+}
+window.wlTrack = function(name, params){ if (window.gtag) gtag('event', name, params || {}); };
+</script>
 <style>
 :root{--teal:#0D9488;--teal-deep:#0F766E;--teal-ink:#134E4A;--teal-soft:#CCFBF1;--teal-mist:#EFFAF7;
 --sky:#E8F4FB;--ink:#1F2E2B;--muted:#64748B;--paper:#FBFAF7;--card:#FFFFFF;--line:#E4EAE7;--gold:#D9A441}
@@ -67,6 +94,8 @@ color:var(--teal-deep);background:var(--teal-soft);border-radius:999px;padding:4
 .card .ex b{color:var(--teal-deep)}
 .card.fp{background:linear-gradient(160deg,#FFFdf4,#FFF);border-color:#EAD9AE}
 .card.fp .tag{background:#F8EFD8;color:#8A6312}
+a.card{text-decoration:none!important;color:inherit}
+a.card .ex b{color:var(--teal-deep)}
 /* quiz cta */
 .quizwrap{background:var(--sky);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .quiz{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1.25fr 1fr;gap:34px;align-items:center}
@@ -104,7 +133,7 @@ footer .legal{border-top:1px solid var(--line);padding-top:18px;text-align:cente
 <nav>
   <a class="logo" href="index.html"><img src="assets/worklever_avatar_400.png" alt="Worklever"/>worklever</a>
   <div class="links">
-    <a href="#series">Series</a><a href="#how">How we work</a><a href="disclosure.html">Disclosures</a>
+    <a href="blog.html">Guides</a><a href="#series">Series</a><a href="#how">How we work</a><a href="disclosure.html">Disclosures</a>
     <a class="btn" href="stack-builder.html">Free Stack Builder</a>
   </div>
 </nav>
@@ -141,18 +170,18 @@ footer .legal{border-top:1px solid var(--line);padding-top:18px;text-align:cente
   <div class="center"><h2>Four series. One promise.</h2>
   <p class="sub">Pick the one built for your business — or start with the analysis that applies to everyone.</p></div>
   <div class="cards">
-    <div class="card"><span class="em">🔧</span><span class="tag">Home services</span><h3>AI for the Trades</h3>
+    <a class="card" href="trades.html"><span class="em">🔧</span><span class="tag">Home services</span><h3>AI for the Trades</h3>
       <p>Plain-English, priced-out breakdowns of the tools that answer your phone, book your jobs and chase your invoices.</p>
-      <div class="ex"><b>Up first:</b> the real cost of a missed call — and the tools that catch it.</div></div>
-    <div class="card"><span class="em">💼</span><span class="tag">Business of one</span><h3>The Solo Stack</h3>
+      <div class="ex"><b>Up first:</b> the real cost of a missed call — and the tools that catch it. <b>Visit the series →</b></div></a>
+    <a class="card" href="solo-stack.html"><span class="em">💼</span><span class="tag">Business of one</span><h3>The Solo Stack</h3>
       <p>Which tools genuinely buy back billable hours for bookkeepers, realtors, coaches and consultants — and which just add a subscription.</p>
-      <div class="ex"><b>Up first:</b> which admin job should AI take first when you bill by the hour.</div></div>
-    <div class="card"><span class="em">🏪</span><span class="tag">Retail &amp; e-commerce</span><h3>Main Street AI</h3>
+      <div class="ex"><b>Up first:</b> which admin job should AI take first when you bill by the hour. <b>Visit the series →</b></div></a>
+    <a class="card" href="main-street.html"><span class="em">🏪</span><span class="tag">Retail &amp; e-commerce</span><h3>Main Street AI</h3>
       <p>Marketing-grade tools priced for boutiques, bakeries, salons and Etsy shops competing with big-box budgets.</p>
-      <div class="ex"><b>Up first:</b> do you actually need Shopify? A decision tree.</div></div>
-    <div class="card fp"><span class="em">🔍</span><span class="tag">Every owner</span><h3>The Fine Print</h3>
+      <div class="ex"><b>Up first:</b> do you actually need Shopify? A decision tree. <b>Visit the series →</b></div></a>
+    <a class="card fp" href="fine-print.html"><span class="em">🔍</span><span class="tag">Every owner</span><h3>The Fine Print</h3>
       <p>The flagship analysis line: pricing pages decoded, plans compared, and the traps in the terms — for tools every business faces.</p>
-      <div class="ex"><b>Up first:</b> Zapier vs Make — the pricing models decoded.</div></div>
+      <div class="ex"><b>Up first:</b> Zapier vs Make — the pricing models decoded. <b>Visit the series →</b></div></a>
   </div>
 </section>
 
@@ -160,8 +189,8 @@ footer .legal{border-top:1px solid var(--line);padding-top:18px;text-align:cente
   <div class="quiz">
     <div>
       <h2>Not sure which tools you actually need?</h2>
-      <p>Answer 6 questions. Get a 3-tool stack matched to your biggest time-sink — honest costs, the free path for
-      every tool, and one automation to set up first.</p>
+      <p>Answer 6 questions. Get a stack of 3-4 tools matched to your biggest time-sink — honest costs, the free path for
+      every tool, and one automation to set up first. No email required to see your result.</p>
       <a class="btn" href="stack-builder.html">Take the 2-minute quiz →</a>
     </div>
     <div class="mini" aria-hidden="true">
@@ -188,13 +217,14 @@ footer .legal{border-top:1px solid var(--line);padding-top:18px;text-align:cente
 <section class="signupwrap">
   <div class="signup">
     <h2>The Tuesday &amp; Friday letters</h2>
-    <p class="sub" style="margin-bottom:0">One tool, one honest verdict, one number that matters — twice a week, matched to your business type.</p>
-    <!-- MAILERLITE-EMBED-SLOT: replace this form with the MailerLite embed at wiring -->
-    <form class="box" onsubmit="return false" aria-label="newsletter signup (activates at launch)">
-      <input type="email" placeholder="you@yourbusiness.com" disabled/>
-      <a class="btn" href="stack-builder.html">Start with the quiz →</a>
-    </form>
-    <div class="fine">Signups open at launch. Every email discloses affiliate links · unsubscribe anytime.</div>
+    <p class="sub" style="margin-bottom:0">One tool, one honest verdict, one number that matters — twice a week, 4 minutes a read, matched to your business type.</p>
+    <!-- MAILERLITE-EMBED-SLOT: replace this block with the MailerLite embed at wiring.
+         Until wired we make NO signup promise we can't keep — the quiz is the honest way in. -->
+    <div class="box" style="justify-content:center">
+      <a class="btn" href="stack-builder.html">Start with the free quiz →</a>
+    </div>
+    <div class="fine">The letters begin alongside our first episodes — signups open right here the moment they do.
+    Every email will disclose affiliate links · unsubscribe anytime.</div>
   </div>
 </section>
 
@@ -208,20 +238,31 @@ footer .legal{border-top:1px solid var(--line);padding-top:18px;text-align:cente
     <div>
       <b>Explore</b><br/>
       <a href="stack-builder.html">AI Stack Builder</a><br/>
+      <a href="blog.html">Guides &amp; teardowns</a><br/>
       <a href="#series">The four series</a><br/>
-      <a href="#how">How we research</a>
+      <a href="methodology.html">How we research</a><br/>
+      <a href="about.html">About Worklever</a>
     </div>
     <div>
       <b>The boring pages</b><br/>
       <a href="disclosure.html">Affiliate &amp; AI Disclosure</a><br/>
       <a href="privacy.html">Privacy Policy</a><br/>
-      <a href="terms.html">Terms of Use</a>
+      <a href="terms.html">Terms of Use</a><br/>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
+  <!-- SOCIAL-LINKS-SLOT: uncomment when the @workleverhq channels are live, and mirror them in the Organization schema sameAs array.
+  <div style="text-align:center;margin-bottom:16px">
+    <a href="https://www.youtube.com/@workleverhq">YouTube</a> ·
+    <a href="https://www.tiktok.com/@workleverhq">TikTok</a> ·
+    <a href="https://www.instagram.com/workleverhq">Instagram</a> ·
+    <a href="https://www.facebook.com/workleverhq">Facebook</a> ·
+    <a href="https://www.pinterest.com/workleverhq">Pinterest</a>
+  </div> -->
   <div class="legal">
     Some links on this site are affiliate links — if you buy through them we may earn a commission at no extra cost
     to you. It never changes what we recommend, and we always show the free option first. Educational content only —
-    not financial, legal, or tax advice. © 2026 Worklever
+    not financial, legal, or tax advice.<br/>© 2026 Worklever, a Strata brand · <a href="mailto:hello@worklever.co">hello@worklever.co</a>
   </div>
 </footer>
 
