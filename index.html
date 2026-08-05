@@ -218,13 +218,31 @@ footer .legal{border-top:1px solid var(--line);padding-top:18px;text-align:cente
   <div class="signup">
     <h2>The Tuesday &amp; Friday letters</h2>
     <p class="sub" style="margin-bottom:0">One tool, one honest verdict, one number that matters — twice a week, 4 minutes a read, matched to your business type.</p>
-    <!-- MAILERLITE-EMBED-SLOT: replace this block with the MailerLite embed at wiring.
-         Until wired we make NO signup promise we can't keep — the quiz is the honest way in. -->
-    <div class="box" style="justify-content:center">
-      <a class="btn" href="stack-builder.html">Start with the free quiz →</a>
-    </div>
-    <div class="fine">The letters begin alongside our first episodes — signups open right here the moment they do.
-    Every email will disclose affiliate links · unsubscribe anytime.</div>
+    <!-- KIT-FORM: form 9768000, wired 2026-08-06 -->
+    <form class="box" id="letters-form">
+      <input type="email" id="letters-email" placeholder="you@yourbusiness.com" required/>
+      <button class="btn" type="submit" style="border:0;cursor:pointer">Get the letters →</button>
+    </form>
+    <div class="fine" id="letters-note">Letters begin alongside our first episodes — sign up now and you're first in line.
+    Every email discloses affiliate links · unsubscribe anytime.</div>
+    <script>
+    document.getElementById('letters-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      var email = document.getElementById('letters-email').value.trim();
+      if(!email) return;
+      var fd = new FormData(); fd.append('email_address', email);
+      var note = document.getElementById('letters-note');
+      fetch('https://app.kit.com/forms/9768000/subscriptions', {method:'POST', body:fd, mode:'no-cors'})
+        .then(function(){
+          if (window.wlTrack) wlTrack('signup_submit', {location:'homepage'});
+          note.innerHTML = '<b>One step left:</b> check your inbox and click the confirmation link — then you\'re in. Letters begin with our first episodes.';
+          document.getElementById('letters-form').style.display = 'none';
+        })
+        .catch(function(){
+          note.innerHTML = 'Hmm, that did not go through — try again in a minute or email <a href="mailto:hello@worklever.co">hello@worklever.co</a>.';
+        });
+    });
+    </script>
   </div>
 </section>
 

@@ -161,7 +161,7 @@ function renderQ(){
 
 /* Email capture: set ML_FORM_ACTION to the MailerLite form endpoint to go live.
    Until then the gate stays honest: result is always shown, nothing is falsely "sent". */
-const ML_FORM_ACTION = "";  /* MAILERLITE-SLOT: paste form action URL at wiring */
+const EMAIL_FORM_ACTION = "https://app.kit.com/forms/9768000/subscriptions";  /* Kit form 9768000 (wired 2026-08-06) */
 
 function renderGate(){
   const c = DATA.copy;
@@ -185,9 +185,9 @@ function renderGate(){
 }
 
 function captureEmail(email){
-  if(ML_FORM_ACTION){
-    var fd=new FormData(); fd.append('fields[email]',email);
-    fetch(ML_FORM_ACTION,{method:'POST',body:fd,mode:'no-cors'})
+  if(EMAIL_FORM_ACTION){
+    var fd=new FormData(); fd.append('email_address',email);
+    fetch(EMAIL_FORM_ACTION,{method:'POST',body:fd,mode:'no-cors'})
       .then(()=>{wlTrack('gate_submit');renderResult('sent');})
       .catch(()=>{renderResult('error');});
   }else{
@@ -229,7 +229,7 @@ function renderResult(emailState){
   if(tech==='none') note += " Not techy? Good — every step below is no-code, and you only need the <b>first automation</b> to get a win this week.";
 
   let mailNote = '';
-  if(emailState==='sent') mailNote = '<div class="skip" style="background:#e9f9f1;border-color:#bfe8d2"><div class="sk"><b>Done — check your inbox.</b> Your stack and the 5-day setup guide are on the way. Your full result is also right here below.</div></div>';
+  if(emailState==='sent') mailNote = '<div class="skip" style="background:#e9f9f1;border-color:#bfe8d2"><div class="sk"><b>One step left — check your inbox.</b> Click the confirmation link and you\'re on the list: your stack recap + the 5-day setup guide arrive when the letters launch. Your full result is right here below either way.</div></div>';
   else if(emailState==='unwired') mailNote = '<div class="skip"><div class="sk"><b>Heads up:</b> email delivery opens when our Tuesday &amp; Friday letters launch (very soon) — your address was NOT stored today. Your full stack is below; bookmark or copy it before you go.</div></div>';
   else if(emailState==='error') mailNote = '<div class="skip"><div class="sk"><b>Hmm — the email did not go through.</b> No matter: your full stack is below. Copy it or bookmark this page.</div></div>';
 
